@@ -70,6 +70,21 @@ namespace UnityAtoms
         }
 
         /// <summary>
+        /// The Constant object as a property.
+        /// </summary>
+        public AtomBaseVariable<T> Constant { set => _constant = value; }
+
+        /// <summary>
+        /// The Variable object as a property.
+        /// </summary>
+        public AtomVariable<T> Variable { set => _variable = value; }
+
+        /// <summary>
+        /// The VariableInstancer object as a property.
+        /// </summary>
+        public AtomVariableInstancer<T> VariableInstancer { set => _variableInstancer = value; }
+
+        /// <summary>
         /// Value used if `Usage` is set to `Value`.
         /// </summary>
         [SerializeField]
